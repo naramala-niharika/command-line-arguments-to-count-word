@@ -7,29 +7,35 @@ Anaconda - Python 3.7
 ## ALGORITHM: 
 
 ### Step 1:
-Load the CSV into a DataFrame
+import sys
 
 ### Step 2: 
-Print the number of contents to be displayed using df.head()
+Open file using open()
 
 ### Step 3: 
-The numbers of rows returned is defined in Pandas option settings 
+Use for loop
 
 ### Step 4:  
-Check your system's maximum column with the pd.options.display.max_column statement
+Use len to count number of words
 
 ### Step 5: 
-Increase the maximum number of rows to display the entire Dataframe.
+Give print
 
 ## PROGRAM:
-```python 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Column",len(df.axes[0]))
-print("Row",len(df.axes[1]))
-```
+Developed by:Naramala Niharika
+
+Reference number:21500912
+
+import sys
+
+with open(sys.argv[1],'r') as f:
+
+    num_words =0
+    for i in f:
+        word =i.split()
+        num_words += len(word)
+print("Number of words={}".format(num_words))
+
 ### OUTPUT:
 ![Output]()
 
