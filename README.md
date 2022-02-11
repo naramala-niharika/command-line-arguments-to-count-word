@@ -37,8 +37,9 @@ with open(sys.argv[1],'r') as f:
 print("Number of words={}".format(num_words))
 
 ### OUTPUT:
-![Output]()
+![Output](https://github.com/naramala-niharika/command-line-arguments-to-count-word/blob/main/1.png?raw=true)
 
+![Output](https://github.com/naramala-niharika/command-line-arguments-to-count-word/blob/main/2.png?raw=true)
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
