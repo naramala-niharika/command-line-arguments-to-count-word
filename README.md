@@ -25,16 +25,13 @@ Give print
 Developed by:Naramala Niharika
 
 Reference number:21500912
-
 import sys
-
+count=0
 with open(sys.argv[1],'r') as f:
-
-    num_words =0
-    for i in f:
-        word =i.split()
-        num_words += len(word)
-print("Number of words={}".format(num_words))
+    for line in f:
+        word = line.split()
+        count =+ len(word)
+print("word count in file = " , count )
 
 ### OUTPUT:
 ![Output](https://github.com/naramala-niharika/command-line-arguments-to-count-word/blob/main/1.png?raw=true)
