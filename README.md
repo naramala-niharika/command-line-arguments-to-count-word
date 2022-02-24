@@ -26,11 +26,17 @@ Developed by:Naramala Niharika
 
 Reference number:21500912
 import sys
+
 count=0
+
 with open(sys.argv[1],'r') as f:
+
     for line in f:
+    
         word = line.split()
+        
         count =+ len(word)
+        
 print("word count in file = " , count )
 
 ### OUTPUT:
